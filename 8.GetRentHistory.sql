@@ -5,14 +5,14 @@ BEGIN
     dbms_output.put_line('Property ID: '|| P_PROPERTYID);
     FOR CURSOR IN (SELECT * FROM TENANTSHIP WHERE TENANTSHIP.RENTEDPROPERTYID = P_PROPERTYID)
     LOOP
-        DBMS_OUTPUT.PUT_LINE('---------------------');
-        DBMS_OUTPUT.PUT_LINE('Start Date: ' || CURSOR.STARTDATE);
-        DBMS_OUTPUT.PUT_LINE('End Date: ' || CURSOR.ENDDATE);
-        DBMS_OUTPUT.PUT_LINE('Tenant ID: ' || CURSOR.TENANTID);
-        DBMS_OUTPUT.PUT_LINE('Rent Per Month: ' || CURSOR.RENTPERMONTH);
-        DBMS_OUTPUT.PUT_LINE('Yearly Hike: ' || CURSOR.YEARLYHIKE);
+        DBMS_OUTPUT.PUT_LINE('------------------');
+        DBMS_OUTPUT.PUT_LINE('Start Date       : ' || CURSOR.STARTDATE);
+        DBMS_OUTPUT.PUT_LINE('End Date         : ' || CURSOR.ENDDATE);
+        DBMS_OUTPUT.PUT_LINE('Tenant ID        : ' || CURSOR.TENANTID);
+        DBMS_OUTPUT.PUT_LINE('Rent Per Month   : ' || CURSOR.RENTPERMONTH);
+        DBMS_OUTPUT.PUT_LINE('Yearly Hike      : ' || CURSOR.YEARLYHIKE);
         DBMS_OUTPUT.PUT_LINE('Agency Commission: ' || CURSOR.AGENCYCOMMISSION);
-        DBMS_OUTPUT.PUT_LINE('---------------------');
+        DBMS_OUTPUT.PUT_LINE('------------------');
     END LOOP;
 END;
 /
