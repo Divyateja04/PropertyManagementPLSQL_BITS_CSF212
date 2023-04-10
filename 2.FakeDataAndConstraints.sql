@@ -1,15 +1,16 @@
---- ADDING FAKE DATA
-INSERT INTO Property(propertyID,ownerID,rentPerMonth,availableFrom,availableTill,totalArea,plinthArea,noOfFloors,yearOfConstruction,locality,address,annualHike,residential,noOfBedrooms) VALUES (1,100010001001,50000,2023-04-01,2024-03-31,1200,1000,2,2015,"Sarjapur Road","123 Main Street",5,1,3);
-INSERT INTO Property(propertyID,ownerID,rentPerMonth,availableFrom,availableTill,totalArea,plinthArea,noOfFloors,yearOfConstruction,locality,address,annualHike,residential,noOfBedrooms) VALUES (2,100010002002,70000,2023-05-01,2024-04-30,1500,1200,1,2010,"Whitefield","456 Broad Street",7,1,4);
-INSERT INTO Property(propertyID,ownerID,rentPerMonth,availableFrom,availableTill,totalArea,plinthArea,noOfFloors,yearOfConstruction,locality,address,annualHike,residential,noOfBedrooms) VALUES (3,100010003003,100000,2023-06-01,2024-05-31,2000,1800,3,2018,"Indiranagar","789 Fifth Avenue",10,1,5);
-INSERT INTO Property(propertyID,ownerID,rentPerMonth,availableFrom,availableTill,totalArea,plinthArea,noOfFloors,yearOfConstruction,locality,address,annualHike,residential,noOfBedrooms) VALUES (4,100010004004,25000,2023-04-15,2024-04-14,800,700,2,2005,"JP Nagar","456 Sixth Street",2,1,2);
-INSERT INTO Property(propertyID,ownerID,rentPerMonth,availableFrom,availableTill,totalArea,plinthArea,noOfFloors,yearOfConstruction,locality,address,annualHike,residential,noOfBedrooms) VALUES (5,100010005005,45000,2023-07-01,2024-06-30,1100,900,1,2012,"Marathahalli","789 Seventh Avenue",5,1,3);
 
-INSERT INTO Users VALUES (100010001001,password1,John Doe,35,1234,560001,"Main Street",0,0);
-INSERT INTO Users VALUES (100010002002,password2,Jane Smith,28,5678,560002,"Broad Street",0,0);
-INSERT INTO Users VALUES (100010003003,password3,Bob Johnson,45,9101,560003,"Fifth Avenue",0,0);
-INSERT INTO Users VALUES (100010004004,password4,Alice Williams,23,1112,560004,"Sixth Street",0,0);
-INSERT INTO Users VALUES (100010005005,password5,David Brown,31,1314,560005,"Seventh Avenue",0,0);
+--- ADDING FAKE DATA
+INSERT INTO Property(propertyID,ownerID,rentPerMonth,availableFrom,availableTill,totalArea,plinthArea,noOfFloors,yearOfConstruction,locality,address,annualHike,residential,noOfBedrooms) VALUES (1,100010001001,50000,2023-04-01,2024-03-31,1200,1000,2,2015,'Sarjapur Road','123 Main Street',5,1,3);
+INSERT INTO Property(propertyID,ownerID,rentPerMonth,availableFrom,availableTill,totalArea,plinthArea,noOfFloors,yearOfConstruction,locality,address,annualHike,residential,noOfBedrooms) VALUES (2,100010002002,70000,2023-05-01,2024-04-30,1500,1200,1,2010,'Whitefield','456 Broad Street',7,1,4);
+INSERT INTO Property(propertyID,ownerID,rentPerMonth,availableFrom,availableTill,totalArea,plinthArea,noOfFloors,yearOfConstruction,locality,address,annualHike,residential,noOfBedrooms) VALUES (3,100010003003,100000,2023-06-01,2024-05-31,2000,1800,3,2018,'Indiranagar','789 Fifth Avenue',10,1,5);
+INSERT INTO Property(propertyID,ownerID,rentPerMonth,availableFrom,availableTill,totalArea,plinthArea,noOfFloors,yearOfConstruction,locality,address,annualHike,residential,noOfBedrooms) VALUES (4,100010004004,25000,2023-04-15,2024-04-14,800,700,2,2005,'JP Nagar','456 Sixth Street',2,1,2);
+INSERT INTO Property(propertyID,ownerID,rentPerMonth,availableFrom,availableTill,totalArea,plinthArea,noOfFloors,yearOfConstruction,locality,address,annualHike,residential,noOfBedrooms) VALUES (5,100010005005,45000,2023-07-01,2024-06-30,1100,900,1,2012,'Marathahalli','789 Seventh Avenue',5,1,3);
+
+INSERT INTO Users VALUES (100010001001,user1, password1,'John Doe',35,1234,560001,'Main Street',0,0);
+INSERT INTO Users VALUES (100010002002,user2, password2,'Jane Smith',28,5678,560002,'Broad Street',0,0);
+INSERT INTO Users VALUES (100010003003,user3, password3,'Bob Johnson',45,9101,560003,'Fifth Avenue',0,0);
+INSERT INTO Users VALUES (100010004004,user4, password4,'Alice Williams',23,1112,560004,'Sixth Street',0,0);
+INSERT INTO Users VALUES (100010005005,user5, password5,'David Brown',31,1314,560005,'Seventh Avenue',0,0);
 
 INSERT INTO UsersPhoneNumbers VALUES (100010001001,9876543210);
 INSERT INTO UsersPhoneNumbers VALUES (100010001001,8765432109);
