@@ -6,7 +6,7 @@
 
 4. Write a Stored Procedure to display the properties (with all details) for a given ownerID. Name of the stored procedure is GetPropertyRecords(with Owner ID as the parameter).
 
-5. Write a stored procedure to Print the tenant details for a given property. Name of the stored procedure is GetTenantDetails(with property id as the argument).
+5. [Done] Write a stored procedure to Print the tenant details for a given property. Name of the stored procedure is GetTenantDetails(with property id as the argument).
 
 6. [Done] Write a Stored Procedure to enter a record for a new User. Name of the stored procedure is CreateNewUser (with necessary arguments/parameters for the attributes like- user name, address, login credentials etc. of the record).
 
