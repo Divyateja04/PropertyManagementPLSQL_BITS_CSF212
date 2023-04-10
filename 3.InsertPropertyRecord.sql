@@ -54,5 +54,5 @@ EXCEPTION
         ROLLBACK;
         DBMS_OUTPUT.PUT_LINE('Error inserting data into Property table: '
             || SQLERRM);
-END INSERT_PROPERTY;
+END InsertPropertyRecord;
 /
