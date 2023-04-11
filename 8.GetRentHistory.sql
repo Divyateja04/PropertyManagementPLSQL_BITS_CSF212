@@ -14,5 +14,10 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE('Agency Commission: ' || CURSOR.AGENCYCOMMISSION);
         DBMS_OUTPUT.PUT_LINE('------------------');
     END LOOP;
+EXCEPTION
+    WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('Error getting details for given property id: '
+            || SQLERRM);
 END;
 /
