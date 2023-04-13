@@ -1,9 +1,8 @@
 CREATE PROCEDURE SearchPropertyForRent(p_locality IN VARCHAR2) AS
 BEGIN
+  ALTER SESSION SET NLS_DATE_FORMAT = 'YYYY-MM-DD';
   FOR property IN (
-    SELECT *
-    FROM property
-    where p_locality= property.locality
+    SELECT * FROM property WHERE property.locality=p_locality AND CURRENT_DATE BETWEEN property.availableFrom AND property.availableTill
   )
   LOOP
     DBMS_OUTPUT.PUT_LINE('Property ID: ' || property.propertyID);

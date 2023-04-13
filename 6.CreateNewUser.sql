@@ -15,6 +15,7 @@ CREATE OR REPLACE PROCEDURE CreateNewUser(
 ) 
 AS
 BEGIN
+    ALTER SESSION SET NLS_DATE_FORMAT = 'YYYY-MM-DD';
  -- insert user data into Users table
     INSERT INTO USERS(
         AADHARID,
