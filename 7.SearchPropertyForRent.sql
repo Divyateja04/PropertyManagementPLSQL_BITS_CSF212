@@ -1,8 +1,9 @@
-CREATE PROCEDURE SearchPropertyForRent(p_city IN VARCHAR2) AS
+CREATE PROCEDURE SearchPropertyForRent(p_locality IN VARCHAR2) AS
 BEGIN
   FOR property IN (
     SELECT *
     FROM property
+    where p_locality= property.locality
   )
   LOOP
     DBMS_OUTPUT.PUT_LINE('Property ID: ' || property.propertyID);
