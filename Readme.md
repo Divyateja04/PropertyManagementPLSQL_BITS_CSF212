@@ -1,18 +1,20 @@
+# DBMS CS F212 Project
+
 1. [Done] Create tables (as per the design you showed) with necessary constraints.
 
 2. [Done] Enter dummy data into the tables. We expect reasonable number of tuples for each table.
 
-3. [Done] Write a Stored Procedure to enter a record for property. Name of the stored procedure is InsertPropertyRecord(with necessary arguments/parameters for the attributes of the record).
+3. [Done] Write a Stored Procedure to enter a record for property. Name of the stored procedure is `InsertPropertyRecord`(with necessary arguments/parameters for the attributes of the record). -> Anagha
 
-4. Write a Stored Procedure to display the properties (with all details) for a given ownerID. Name of the stored procedure is GetPropertyRecords(with Owner ID as the parameter).
+4. [Done] Write a Stored Procedure to display the properties (with all details) for a given ownerID. Name of the stored procedure is `GetPropertyRecords`(with Owner ID as the parameter). -> Adarsh
 
-5. [Done] Write a stored procedure to Print the tenant details for a given property. Name of the stored procedure is GetTenantDetails(with property id as the argument).
+5. [Done] Write a stored procedure to Print the tenant details for a given property. Name of the stored procedure is `GetTenantDetails``(with property id as the argument). -> Srikant
 
-6. [Done] Write a Stored Procedure to enter a record for a new User. Name of the stored procedure is CreateNewUser (with necessary arguments/parameters for the attributes like- user name, address, login credentials etc. of the record).
+6. [Done] Write a Stored Procedure to enter a record for a new User. Name of the stored procedure is `CreateNewUser` (with necessary arguments/parameters for the attributes like- user name, address, login credentials etc. of the record). -> Anagha
 
-7. Write a stored procedure that prints details of properties available in a city/locality. Name of the stored procedure is SearchProperyForRent(with city/locality as the argument).
+7. [Done] Write a stored procedure that prints details of properties available in a city/locality. Name of the stored procedure is `SearchProperyForRent`(with city/locality as the argument). -> Atharva
 
-8. [Done] Write a stored procedure to print the rent history for a given property. Name of the stored procedure is GetRentHistory(with property id as the argument).
+8. [Done] Write a stored procedure to print the rent history for a given property. Name of the stored procedure is `GetRentHistory`(with property id as the argument). -> Divyateja
 
 9. Each group will bring its laptop for demonstration. No paperwork expected. But bring the details of your table design/ER diagram shown during the phase-1 evaluation, for cross verification.
 
