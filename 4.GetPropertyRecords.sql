@@ -4,7 +4,7 @@ CREATE OR REPLACE PROCEDURE GetPropertyRecords (
     P_OWNERID IN PROPERTY.OWNERID%TYPE
 ) AS
 BEGIN
-    ALTER SESSION SET NLS_DATE_FORMAT = 'YYYY-MM-DD';
+    EXECUTE IMMEDIATE 'ALTER SESSION SET NLS_DATE_FORMAT = YYYY-MM-DD';
     dbms_output.put_line('Owner ID: '|| P_OWNERID);
     FOR CURSOR IN (SELECT * FROM PROPERTY WHERE PROPERTY.OWNERID = P_OWNERID)
     LOOP
@@ -31,3 +31,4 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Error getting property records for given owner id: '
             || SQLERRM);
 END GetPropertyRecords;
+/

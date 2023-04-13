@@ -1,6 +1,6 @@
 CREATE PROCEDURE SearchPropertyForRent(p_locality IN VARCHAR2) AS
 BEGIN
-  ALTER SESSION SET NLS_DATE_FORMAT = 'YYYY-MM-DD';
+  EXECUTE IMMEDIATE 'ALTER SESSION SET NLS_DATE_FORMAT = YYYY-MM-DD';
   FOR property IN (
     SELECT * FROM property WHERE property.locality=p_locality AND CURRENT_DATE BETWEEN property.availableFrom AND property.availableTill
   )
@@ -27,3 +27,4 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('No properties available in this city for rent: '
             || SQLERRM);
 END;
+/
