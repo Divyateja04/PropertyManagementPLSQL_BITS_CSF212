@@ -2,8 +2,7 @@ CREATE PROCEDURE SearchPropertyForRent(p_city IN VARCHAR2) AS
 BEGIN
   FOR property IN (
     SELECT *
-    FROM properties
-    WHERE city = p_city
+    FROM property
   )
   LOOP
     DBMS_OUTPUT.PUT_LINE('Property ID: ' || property.propertyID);

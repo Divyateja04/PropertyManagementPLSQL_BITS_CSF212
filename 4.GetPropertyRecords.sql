@@ -21,7 +21,7 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE('Address             : ' || CURSOR.ADDRESS);
         DBMS_OUTPUT.PUT_LINE('Annual Hike         : ' || CURSOR.ANNUALHIKE);
         DBMS_OUTPUT.PUT_LINE('Residential         : ' || CURSOR.RESIDENTIAL);
-        DBMS_OUTPUT.PUT_LINE('No. of Bedroom      : ' || CURSOR.NOOFBEDROOM);
+        DBMS_OUTPUT.PUT_LINE('No. of Bedroom      : ' || CURSOR.NOOFBEDROOMs);
         DBMS_OUTPUT.PUT_LINE('---------------------');
     END LOOP;
 EXCEPTION
@@ -29,4 +29,4 @@ EXCEPTION
         ROLLBACK;
         DBMS_OUTPUT.PUT_LINE('Error getting property records for given owner id: '
             || SQLERRM);
-END InsertPropertyRecord;
+END GetPropertyRecords;
