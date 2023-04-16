@@ -1,5 +1,6 @@
 from faker import Faker
 from random import randint
+import random
 
 NUMBER_OF_SAMPLES = 10
 
@@ -39,9 +40,9 @@ Faker.seed(69)
 # Users
 for i in range(1, NUMBER_OF_SAMPLES):
     l = []
-    l.append(fake.numerify(text="##########"))  # aadhar
+    l.append(fake.numerify(text="############"))  # aadhar
     l.append(fake.user_name())  # login id
-    l.append(fake.password())  # login password
+    l.append(''.join(random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789') for _ in range(10)))  # login password
     l.append(fake.name())  # name
     l.append(fake.random_int(min=18, max=65))  # age
     l.append(fake.building_number())  # doorno
@@ -59,8 +60,8 @@ Faker.seed(69)
 # User phone numbers
 for i in range(1, NUMBER_OF_SAMPLES):
     l = []
-    l.append(fake.numerify(text="##########"))  # aadhar
-    l.append(fake.numerify(text="+91 ####-######"))  # phone number
+    l.append(fake.numerify(text="############"))  # aadhar
+    l.append(fake.random_int(min=1000000000, max=9999999999))  # phone number
     print(
         f"INSERT INTO USERSPHONENUMBERS (AADHARID, PHONENUMBER) VALUES {tuple(l)};")
 print()
